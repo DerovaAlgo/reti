@@ -17,11 +17,11 @@ import (
 	"github.com/urfave/cli/v3"
 	"golang.org/x/term"
 
-	"github.com/TxnLab/reti/internal/lib/algo"
-	"github.com/TxnLab/reti/internal/lib/misc"
-	"github.com/TxnLab/reti/internal/lib/nfdapi/swagger"
-	"github.com/TxnLab/reti/internal/lib/nfdonchain"
-	"github.com/TxnLab/reti/internal/lib/reti"
+	"github.com/algorandfoundation/reti/internal/lib/algo"
+	"github.com/algorandfoundation/reti/internal/lib/misc"
+	"github.com/algorandfoundation/reti/internal/lib/nfdapi/swagger"
+	"github.com/algorandfoundation/reti/internal/lib/nfdonchain"
+	"github.com/algorandfoundation/reti/internal/lib/reti"
 )
 
 var logLevel = new(slog.LevelVar) // Info by default
@@ -34,7 +34,7 @@ func initApp() *RetiApp {
 		logger = slog.New(misc.NewMinimalHandler(os.Stdout,
 			misc.MinimalHandlerOptions{SlogOpts: slog.HandlerOptions{Level: logLevel, AddSource: true}}))
 	} else {
-		// not on console - output as json, but change json key names to be more compatibl w/ what google logging
+		// not on console - output as json, but change json key names to be more compatible w/ what google logging
 		// expects
 		opts := &slog.HandlerOptions{
 			AddSource: true,
