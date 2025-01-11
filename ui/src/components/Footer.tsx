@@ -52,8 +52,8 @@ export function Footer() {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl mt-10 px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
+<div className="mx-auto max-w-7xl mt-10 px-6 md:py-12 md:flex md:items-center md:justify-between lg:px-8">
+<div className="hidden md:flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
             <a
               key={item.name}

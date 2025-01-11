@@ -20,9 +20,9 @@ export function ModeToggleMobile({ className = '' }) {
         )}
       >
         <Sun className="h-5 w-5 dark:hidden" />
-        <span className="dark:hidden">Light Mode</span>
+	<span className="dark:hidden">Light Mode</span>
         <Moon className="hidden h-5 w-5 dark:inline" />
-        <span className="hidden dark:inline">Dark Mode</span>
+	<span className="hidden dark:inline">Dark Mode</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" alignOffset={35}>
         <DropdownMenuItem onClick={() => setTheme('light')}>Light</DropdownMenuItem>
